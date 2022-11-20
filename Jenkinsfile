@@ -6,7 +6,6 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           #sh 'npm install'
             sh 'yum install nodejs npm --enablerepo=epel'
         }
      }
